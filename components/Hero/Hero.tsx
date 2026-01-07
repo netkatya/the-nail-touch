@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="absolut inset-0 bg-white/40 w-full min-h-160">
         <div className="container">
           <div className="w-[50%] py-34">
-            <h1 className="text-5xl text-emerald-950 mb-8 ">
+            <h1 className="text-5xl text-emerald-950 mb-8 leading-[133%]">
               Cozy care <br /> in a calm atmosphere
             </h1>
             <hr className="mb-8 text-(--color-border)" />

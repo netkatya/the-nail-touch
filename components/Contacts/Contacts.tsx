@@ -13,7 +13,6 @@ export default function Contacts() {
       className="relative py-20 bg-linear-to-b from-white to-(--color-bg-soft) overflow-hidden"
       id="contact"
     >
-      {/* Декоративные элементы */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-(--color-accent-soft) opacity-20 blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 w-60 h-60 rounded-full bg-(--color-accent-soft) opacity-20 blur-2xl pointer-events-none"></div>
       <div className="absolute top-1/3 left-10 w-40 h-40 rounded-full bg-(--color-accent-soft) opacity-10 blur-2xl pointer-events-none"></div>
@@ -23,7 +22,6 @@ export default function Contacts() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col gap-6">
-            {/* Instagram */}
             <Link
               href="https://www.instagram.com/the_nail_touch?igsh=d3hmbHk1MG0yNTc="
               target="_blank"
@@ -38,8 +36,7 @@ export default function Contacts() {
               </span>
             </Link>
 
-            {/* WhatsApp */}
-            <a
+            <Link
               href="https://wa.me/1234567890"
               target="_blank"
               rel="noopener noreferrer"
@@ -51,10 +48,9 @@ export default function Contacts() {
               <span className="text-(--color-text-main) text-lg">
                 +44 746 547 4727
               </span>
-            </a>
+            </Link>
 
-            {/* Email */}
-            <a
+            <Link
               href="mailto:example@email.com"
               className="flex items-center gap-4 p-6 rounded-2xl bg-(--color-bg-soft) shadow-lg hover:-translate-y-1 hover:shadow-2xl transition-all"
             >
@@ -64,9 +60,8 @@ export default function Contacts() {
               <span className="text-(--color-text-main) text-lg">
                 the_nail_touch@gmail.com
               </span>
-            </a>
+            </Link>
 
-            {/* Локация */}
             <div className="flex items-center gap-2 p-6 rounded-2xl bg-(--color-bg-soft) shadow-lg">
               <div className="w-12 h-12 flex items-center justify-center bg-(--color-accent-soft) rounded-full drop-shadow-md">
                 <FaMapMarkerAlt className="text-(--color-accent-dark) w-6 h-6" />

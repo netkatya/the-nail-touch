@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-(--color-accent-dark) h-25 py-2.5">
+    <header className="bg-(--color-accent-dark) h-25 py-2.5 border-b border-b-emerald-950">
       <div className="container">
-        <div>
+        <div className="flex">
           <Link href="/">
             <Image
               src="/img/logo-lighttheme.png"
@@ -14,6 +14,20 @@ export default function Header() {
               height={80}
             ></Image>
           </Link>
+          <nav className="flex gap-6 items-center ml-auto">
+            <Link href="#about" className="text-xl link-underline">
+              About Me
+            </Link>
+            <Link href="#price" className="text-xl link-underline">
+              Price
+            </Link>
+            <Link href="#gallery" className="text-xl link-underline">
+              Gallery
+            </Link>
+            <Link href="#contacts" className="text-xl link-underline">
+              Contacts
+            </Link>
+          </nav>
         </div>
       </div>
     </header>

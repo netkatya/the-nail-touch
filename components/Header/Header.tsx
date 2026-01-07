@@ -24,7 +24,7 @@ export default function Header() {
             <Link href="#gallery" className="text-xl link-underline">
               Gallery
             </Link>
-            <Link href="#contacts" className="text-xl link-underline">
+            <Link href="#contact" className="text-xl link-underline">
               Contacts
             </Link>
           </nav>

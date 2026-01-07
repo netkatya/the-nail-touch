@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="container">
           <div className="md:w-[50%] py-24 lg:py-32">
             <h1 className="text-[42px] font-medium text-emerald-950 mb-8 leading-[150%]">
-              Cozy care <br /> in a calm atmosphere
+              Gentle care <br /> in a calm atmosphere
             </h1>
             <hr className="mb-8 text-(--color-border)" />
             <ul className="flex flex-wrap gap-x-20 gap-y-6 pl-6 mb-12">

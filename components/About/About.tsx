@@ -6,7 +6,7 @@ export default function About() {
       className="pb-20 bg-linear-to-b from-white to-(--color-bg-soft)"
       id="about"
     >
-      <div className="w-full h-1 mb-20 bg-linear-to-r from-(--color-accent-soft) via-[var(--color-accent)/40] to-[var(--color-accent-soft)] rounded-full"></div>
+      <div className="w-full h-1 mb-20 bg-linear-to-r from-(--color-accent-soft) via-[var(--color-accent)/40] to-(--color-accent-soft) rounded-full"></div>
       <div className="container mx-auto flex flex-col md:flex-row gap-12 items-center px-4">
         {/* Фото */}
         <div className="relative">

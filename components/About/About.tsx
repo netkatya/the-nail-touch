@@ -9,18 +9,16 @@ export default function About() {
       <div className="w-full h-1 mb-20 bg-linear-to-r from-(--color-accent-soft) via-[var(--color-accent)/40] to-(--color-accent-soft) rounded-full"></div>
       <div className="container mx-auto flex flex-col md:flex-row gap-12 items-center px-4">
         {/* Фото */}
-        <div className="relative">
+        <div className="relative border border-[#E3E0DB] rounded-2xl">
           <Image
             src="/img/about.png"
             alt="My photo"
             width={260}
             height={420}
-            className="flex bg-(--color-bg-hero) 
+            className="m-4 flex 
     rounded-2xl 
     shadow-[0_0_10px_rgba(143,175,155,0.25)] 
-    hover:shadow-[0_0_20px_rgba(143,175,155,0.5)]
-    transition 
-    hover:-translate-y-1"
+    transition "
           />
         </div>
 

@@ -2,24 +2,23 @@
 
 :root {
   /* Base */
-  --color-bg-main: #FAF9F7;
-  --color-bg-soft: #F2EFEA;
-  --color-bg-card: #FFFFFF;
-
+  --color-bg-main: #faf9f7;
+  --color-bg-soft: #f2efea;
+  --color-bg-card: #ffffff;
 
   /* Green */
-  --color-accent: #8FAF9B;
-  --color-accent-soft: #C9DBCF;
-  --color-accent-dark: #6F9580;
+  --color-accent: #8faf9b;
+  --color-accent-soft: #c9dbcf;
+  --color-accent-dark: #6f9580;
 
   /* Text */
-  --color-text-main: #2F2F2F;
-  --color-text-muted: #6B6B6B;
-  --color-text-light: #FFFFFF;
+  --color-text-main: #2f2f2f;
+  --color-text-muted: #6b6b6b;
+  --color-text-light: #ffffff;
 
   /* UI details */
-  --color-border: #E3E0DB;
-  --color-icon: #7FA28C;
+  --color-border: #e3e0db;
+  --color-icon: #7fa28c;
 }
 
 @theme inline {
@@ -57,7 +56,6 @@ body {
 }
 
 @media (min-width: 640px) {
-
   /* sm */
   .container {
     max-width: 640px;
@@ -85,7 +83,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-
   /* xl */
   .container {
     max-width: 1280px;
@@ -96,7 +93,6 @@ body {
 }
 
 @media (min-width: 1536px) {
-
   /* 2xl */
   .container {
     max-width: 1536px;
@@ -129,9 +125,14 @@ body {
 }
 /* line */
 .bg-title-texture {
-  background: linear-gradient(90deg,
-      transparent,
-      var(--color-accent-soft),
-      transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-accent-soft),
+    transparent
+  );
 }
 
+.swiper-pagination-bullet-active {
+  @apply bg-black;
+}

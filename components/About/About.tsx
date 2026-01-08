@@ -23,7 +23,7 @@ export default function About() {
         {/* Текст */}
         <div className="max-w-xl">
           <h2 className="text-3xl mb-6 font-heading">About me</h2>
-          <div className="mb-6 h-px w-full bg-(--color-accent)"></div>
+          <div className="mb-6 h-0.5 w-full bg-linear-to-l from-transparent to-(--color-accent) opacity-60"></div>
 
           <p className="text-lg mb-4 text-(--color-text-main)">
             I’m a beauty specialist with over{" "}

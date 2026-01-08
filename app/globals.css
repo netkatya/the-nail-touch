@@ -127,5 +127,11 @@ body {
 .link-underline:hover::after {
   width: 100%;
 }
-
+/* line */
+.bg-title-texture {
+  background: linear-gradient(90deg,
+      transparent,
+      var(--color-accent-soft),
+      transparent);
+}
 

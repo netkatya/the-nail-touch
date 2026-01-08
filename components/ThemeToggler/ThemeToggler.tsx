@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaSun, FaMoon } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
 
 export default function ThemeToggler() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -31,7 +31,7 @@ export default function ThemeToggler() {
   return (
     <button
       onClick={toggleTheme}
-      className="ml-10 w-6 h-6 rounded-full grid place-items-center bg-(--color-bg-soft) shadow-md hover:shadow-lg transition-colors duration-300"
+      className=" w-6 h-6 rounded-full grid place-items-center bg-(--color-bg-soft) shadow-md hover:shadow-lg transition-colors duration-300"
     >
       <FaMoon className="text-gray-400 text-md transition-colors duration-300 hover:text-gray-500" />
     </button>

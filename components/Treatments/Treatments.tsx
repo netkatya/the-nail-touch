@@ -50,7 +50,7 @@ const fadeUp = {
 export default function Services() {
   return (
     <section
-      className="py-20 bg-linear-to-t from-(--color-bg-card) to-(--color-bg-soft)"
+      className="py-10 md:py-20 bg-linear-to-t from-(--color-bg-card) to-(--color-bg-soft)"
       id="services"
     >
       <div className="container mx-auto px-4">
@@ -72,7 +72,14 @@ export default function Services() {
                 viewport={{ once: true, amount: 0.3 }}
                 variants={fadeUp}
                 transition={{ delay: index * 0.15, duration: 0.6 }}
-                className="flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-1"
+                className="
+    flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) 
+    rounded-2xl 
+    shadow-[0_0_10px_rgba(143,175,155,0.25)] 
+    hover:shadow-[0_0_20px_rgba(143,175,155,0.5)]
+    transition 
+    hover:-translate-y-1
+  "
               >
                 <Icon className="w-12 h-12 text-(--color-accent)" />
                 <h3 className="text-lg font-semibold">{service.name}</h3>

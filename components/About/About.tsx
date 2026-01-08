@@ -10,13 +10,17 @@ export default function About() {
       <div className="container mx-auto flex flex-col md:flex-row gap-12 items-center px-4">
         {/* Фото */}
         <div className="relative">
-          <div className=""></div>
           <Image
             src="/img/about.png"
             alt="My photo"
             width={260}
             height={420}
-            className="relative rounded-2xl shadow-lg object-cover"
+            className="flex bg-(--color-bg-hero) 
+    rounded-2xl 
+    shadow-[0_0_10px_rgba(143,175,155,0.25)] 
+    hover:shadow-[0_0_20px_rgba(143,175,155,0.5)]
+    transition 
+    hover:-translate-y-1"
           />
         </div>
 

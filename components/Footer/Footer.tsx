@@ -22,12 +22,7 @@ export default function Footer() {
     <footer className="bg-(--color-accent-dark) border-t border-t-(--color-text-hero) pt-6">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-8">
         <Link href="/" className="flex items-center gap-4">
-          <Image
-            src="/img/Logo-LightTheme.png"
-            alt="Logo"
-            width={120}
-            height={120}
-          />
+          <Image src="/img/logo.png" alt="Logo" width={120} height={120} />
         </Link>
 
         <nav className="flex flex-col md:flex-row text-center justify-center gap-6 text-(--color-accent-soft) font-medium">

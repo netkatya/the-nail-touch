@@ -47,12 +47,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <Link href="/">
-          <Image
-            src="/img/logo-lighttheme.png"
-            alt="Logo"
-            width={80}
-            height={80}
-          />
+          <Image src="/img/logo.png" alt="Logo" width={80} height={80} />
         </Link>
 
         {/* Desktop navigation */}

@@ -124,9 +124,9 @@ export default function Contacts() {
               className="flex items-center gap-4 p-6 bg-(--color-bg-hero) 
     rounded-2xl 
     shadow-[0_0_10px_rgba(143,175,155,0.25)] 
-    hover:shadow-[0_0_20px_rgba(143,175,155,0.5)]
+    
     transition 
-    hover:-translate-y-1"
+    "
             >
               <div className="w-12 h-12 flex items-center justify-center bg-(--color-accent-soft) rounded-full drop-shadow-md">
                 <FaMapMarkerAlt className="text-(--color-accent) w-6 h-6" />
@@ -143,19 +143,16 @@ export default function Contacts() {
             whileInView="visible"
             viewport={{ once: true }}
             className="
-    flex flex-col gap-4 p-8 bg-(--color-bg-hero) 
+p-8 bg-(--color-bg-hero) 
     rounded-2xl 
     shadow-[0_0_10px_rgba(143,175,155,0.25)] 
-    hover:shadow-[0_0_20px_rgba(143,175,155,0.5)]
-    transition 
-    hover:-translate-y-1
   "
           >
             <h3 className="text-xl mb-6 font-semibold text-center">
               Opening Hours
             </h3>
 
-            <ul className="text-(--color-text-main) space-y-3">
+            <ul className="text-(--color-text-main) space-y-2">
               {[
                 { day: "Monday", hours: "10am – 3pm" },
                 { day: "Tuesday", hours: "10am – 3pm" },

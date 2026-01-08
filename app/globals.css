@@ -5,7 +5,7 @@
   --color-bg-main: #FAF9F7;
   --color-bg-soft: #F2EFEA;
   --color-bg-card: #FFFFFF;
-
+  --color-bg-hero: #FFFFFF;
 
   /* Green */
   --color-accent: #8FAF9B;
@@ -16,22 +16,55 @@
   --color-text-main: #2F2F2F;
   --color-text-muted: #6B6B6B;
   --color-text-light: #FFFFFF;
+  --color-text-hero: #022C22;
 
   /* UI details */
   --color-border: #E3E0DB;
   --color-icon: #7FA28C;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-family);
+/* Тёмная тема */
+[data-theme="dark"] {
+  --color-bg-main: #121212;
+  --color-bg-soft: #1B1B1B;
+  --color-bg-card: #132b1c;
+  --color-bg-hero: #1B1B1B;
+
+  --color-accent: #8FAF9B;
+  --color-accent-soft: #3A4B3F;
+  --color-accent-dark: #132b1c;
+
+  --color-text-main: #EDEDED;
+  --color-text-muted: #AAAAAA;
+  --color-text-light: #FFFFFF;
+  --color-text-hero: #FFFFFF;
+
+  --color-border: #333333;
+  --color-icon: #7FA28C;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Optional: system theme fallback */
+:root:not([data-theme]) {
+
+  /* Если у пользователя тёмная тема в системе */
+  @media (prefers-color-scheme: dark) {
+    --color-bg-main: #121212;
+    --color-bg-soft: #1B1B1B;
+    --color-bg-card: #132b1c;
+    --color-bg-hero: #1B1B1B;
+
+    --color-accent: #8FAF9B;
+    --color-accent-soft: #3A4B3F;
+    --color-accent-dark: #132b1c;
+  
+
+    --color-text-main: #EDEDED;
+    --color-text-muted: #AAAAAA;
+    --color-text-light: #FFFFFF;
+    --color-text-hero: #FFFFFF;
+
+    --color-border: #333333;
+    --color-icon: #7FA28C;
   }
 }
 
@@ -133,5 +166,18 @@ body {
       transparent,
       var(--color-accent-soft),
       transparent);
+}
+
+/* toggler */
+.toggle {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
 }
 

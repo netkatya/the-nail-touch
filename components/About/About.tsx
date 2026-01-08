@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section
-      className="pb-20 bg-linear-to-b from-white to-(--color-bg-soft)"
+      className="pb-20 bg-linear-to-b from-(--color-bg-card) to-(--color-bg-soft)"
       id="about"
     >
       <div className="w-full h-1 mb-20 bg-linear-to-r from-(--color-accent-soft) via-[var(--color-accent)/40] to-(--color-accent-soft) rounded-full"></div>

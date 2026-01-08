@@ -27,7 +27,7 @@ const fadeUp = {
 export default function Contacts() {
   return (
     <section
-      className="relative py-20 bg-linear-to-b from-white to-(--color-bg-soft) overflow-hidden"
+      className="relative py-20 bg-linear-to-b from-(--color-bg-card) to-(--color-bg-soft) overflow-hidden"
       id="contact"
     >
       <div className="container mx-auto px-4 max-w-5xl relative z-10">
@@ -35,14 +35,12 @@ export default function Contacts() {
           {/* Background stripe */}
           <div className="absolute top-1/2 -translate-y-1/2 w-full h-0.5 bg-linear-to-r from-transparent via-(--color-accent) to-transparent opacity-60" />
 
-          {/* Title */}
-          <h2 className="relative z-10 px-8 py-2 text-3xl font-heading bg-white rounded-full">
+          <h2 className="relative z-10 px-8 py-2 text-3xl font-heading bg-(--color-bg-card) rounded-3xl">
             Contacts
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* LEFT COLUMN */}
           <div className="flex flex-col gap-6">
             <motion.div
               variants={fadeUp}
@@ -119,7 +117,6 @@ export default function Contacts() {
             </motion.div>
           </div>
 
-          {/* RIGHT COLUMN */}
           <motion.div
             variants={fadeUp}
             initial="hidden"

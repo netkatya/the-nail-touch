@@ -1,11 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import ThemeToggler from "../ThemeToggler/ThemeToggler";
 
 export default function Header() {
   return (
     <header className="bg-(--color-accent-dark) h-25 py-2.5 border-b border-b-emerald-950">
       <div className="container">
-        <div className="flex">
+        <div className="flex justify-between items-center">
           <Link href="/">
             <Image
               src="/img/logo-lighttheme.png"
@@ -28,6 +31,7 @@ export default function Header() {
               Contacts
             </Link>
           </nav>
+          <ThemeToggler />
         </div>
       </div>
     </header>

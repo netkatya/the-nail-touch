@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="bg-[url('/img/hero.webp')] bg-cover bg-center relative pt-25">
-      <div className="absolut inset-0 bg-(--color-bg-hero)/60 w-full min-h-160">
+      <div className="absolut inset-0 bg-(--color-bg-hero)/40 w-full min-h-160">
         <div className="container">
           <div className="md:w-[50%] py-24 lg:py-32">
             <h1 className="text-[42px] font-medium text-(--color-text-hero) mb-8 leading-[150%]">

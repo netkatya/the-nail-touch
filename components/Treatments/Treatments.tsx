@@ -47,7 +47,7 @@ const fadeUp = {
   visible: { opacity: 1 },
 };
 
-export default function Services() {
+export default function Treatments() {
   return (
     <section
       className="py-12 bg-linear-to-t from-(--color-bg-card) to-(--color-bg-soft)"
@@ -69,11 +69,11 @@ export default function Services() {
                 key={service.name}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true }}
                 variants={fadeUp}
                 transition={{ delay: index * 0.15, duration: 0.6 }}
                 className="flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-[0_0_10px_rgba(143,175,155,0.25)] 
-                hover:shadow-[0_0_20px_rgba(143,175,155,0.5)] transition hover:-translate-y-1"
+                hover:shadow-[0_0_20px_rgba(143,175,155,0.5)] transition will-change-transform"
               >
                 <Icon className="w-12 h-12 text-(--color-accent)" />
                 <h3 className="text-lg font-semibold">{service.name}</h3>

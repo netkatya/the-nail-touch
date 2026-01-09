@@ -2,9 +2,10 @@
 
 :root {
   /* Base */
-  --color-bg-main: #faf9f7;
-  --color-bg-soft: #f2efea;
-  --color-bg-card: #ffffff;
+  --color-bg-main: #FAF9F7;
+  --color-bg-soft: #F2EFEA;
+  --color-bg-card: #FFFFFF;
+  --color-bg-hero: #FFFFFF;
 
   /* Green */
   --color-accent: #8faf9b;
@@ -12,25 +13,58 @@
   --color-accent-dark: #6f9580;
 
   /* Text */
-  --color-text-main: #2f2f2f;
-  --color-text-muted: #6b6b6b;
-  --color-text-light: #ffffff;
+  --color-text-main: #2F2F2F;
+  --color-text-muted: #6B6B6B;
+  --color-text-light: #FFFFFF;
+  --color-text-hero: #022C22;
 
   /* UI details */
   --color-border: #e3e0db;
   --color-icon: #7fa28c;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-family);
+/* Тёмная тема */
+[data-theme="dark"] {
+  --color-bg-main: #121212;
+  --color-bg-soft: #1B1B1B;
+  --color-bg-card: #132b1c;
+  --color-bg-hero: #1B1B1B;
+
+  --color-accent: #8FAF9B;
+  --color-accent-soft: #3A4B3F;
+  --color-accent-dark: #132b1c;
+
+  --color-text-main: #EDEDED;
+  --color-text-muted: #AAAAAA;
+  --color-text-light: #FFFFFF;
+  --color-text-hero: #FFFFFF;
+
+  --color-border: #333333;
+  --color-icon: #7FA28C;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Optional: system theme fallback */
+:root:not([data-theme]) {
+
+  /* Если у пользователя тёмная тема в системе */
+  @media (prefers-color-scheme: dark) {
+    --color-bg-main: #121212;
+    --color-bg-soft: #1B1B1B;
+    --color-bg-card: #132b1c;
+    --color-bg-hero: #1B1B1B;
+
+    --color-accent: #8FAF9B;
+    --color-accent-soft: #3A4B3F;
+    --color-accent-dark: #132b1c;
+  
+
+    --color-text-main: #EDEDED;
+    --color-text-muted: #AAAAAA;
+    --color-text-light: #FFFFFF;
+    --color-text-hero: #FFFFFF;
+
+    --color-border: #333333;
+    --color-icon: #7FA28C;
   }
 }
 
@@ -53,6 +87,10 @@ body {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+section {
+  scroll-margin-top: 0px;
 }
 
 @media (min-width: 640px) {
@@ -136,3 +174,16 @@ body {
 .swiper-pagination-bullet-active {
   @apply bg-black;
 }
+/* toggler */
+.toggle {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+

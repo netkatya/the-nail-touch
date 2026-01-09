@@ -4,6 +4,7 @@ import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
+import ThemeToggler from "../ThemeToggler/ThemeToggler";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,15 +19,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-(--color-accent-dark) border-t border-t-emerald-950 pt-6">
+    <footer className="bg-(--color-accent-dark) border-t border-t-(--color-text-hero) pt-6">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-8">
         <Link href="/" className="flex items-center gap-4">
-          <Image
-            src="/img/Logo-LightTheme.png"
-            alt="Logo"
-            width={120}
-            height={120}
-          />
+          <Image src="/img/logo.png" alt="Logo" width={120} height={120} />
         </Link>
 
         <nav className="flex flex-col md:flex-row text-center justify-center gap-6 text-(--color-accent-soft) font-medium">
@@ -59,6 +55,7 @@ export default function Footer() {
             <FaEnvelope className="w-6 h-6 " />
           </Link>
         </div>
+        <ThemeToggler />
       </div>
 
       <div className="mt-6 mx-auto h-px w-full bg-white opacity-50"></div>

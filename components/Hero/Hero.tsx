@@ -31,7 +31,7 @@ export default function Hero() {
               </li>
             </ul>
             <Link
-              href="#price"
+              href="#prices"
               className="flex justify-center items-center rounded-3xl h-13 w-45 border border-(--color-accent-dark) bg-(--color-accent-dark) text-white text-xl hover:text-(--color-accent-dark) hover:bg-white transition-all duration-250"
             >
               View Prices

@@ -13,7 +13,7 @@ export default function PriceList() {
   return (
     <section
       className="relative py-12 bg-linear-to-b from-(--color-bg-card) to-(--color-bg-soft) overflow-hidden"
-      id="price"
+      id="prices"
     >
       <div className="container mx-auto px-4 max-w-5xl relative z-10">
         <div className="relative mb-16 flex justify-center">

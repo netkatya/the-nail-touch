@@ -61,7 +61,7 @@ export default function Treatments() {
           <div className="absolute top-1/2 -translate-y-1/2 w-full h-0.5 bg-linear-to-r from-transparent via-(--color-accent) to-transparent opacity-60" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="flex flex-wrap gap-10">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (

@@ -1,53 +1,24 @@
 "use client";
 
-import { FaHandSparkles } from "react-icons/fa";
-import { GiEyelashes, GiFemaleLegs, GiFootprint } from "react-icons/gi";
-import { MdOutlineSpa } from "react-icons/md";
 import { motion } from "framer-motion";
-
-const services = [
-  {
-    name: "Manicure",
-    description:
-      "Gentle care for your nails, shaping, polishing, and long-lasting results.",
-    icon: FaHandSparkles,
-  },
-  {
-    name: "Pedicure",
-    description:
-      "Relaxing foot care, softening, nail shaping, and smooth skin.",
-    icon: GiFootprint,
-  },
-  {
-    name: "Massage",
-    description:
-      "Relaxing massage to release tension and restore comfort and well-being.",
-    icon: MdOutlineSpa,
-  },
-  {
-    name: "Depilation",
-    description: "Gentle and safe hair removal, leaving skin smooth and soft.",
-    icon: GiFemaleLegs,
-  },
-  {
-    name: "Eyelashes",
-    description: "Professional eyelash tinting for a natural, beautiful look.",
-    icon: GiEyelashes,
-  },
-  {
-    name: "Eyebrows",
-    description:
-      "Shaping, tinting, and grooming for perfect brows that suit you.",
-    icon: GiEyelashes,
-  },
-];
-
-const fadeUp = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-};
+import { services } from "@/const/services";
+import { useEffect, useState } from "react";
 
 export default function Treatments() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const fadeUp = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
     <section
       className="py-12 bg-linear-to-t from-(--color-bg-card) to-(--color-bg-soft)"
@@ -64,21 +35,37 @@ export default function Treatments() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => {
             const Icon = service.icon;
+
+            // mobile
+            if (isMobile) {
+              return (
+                <div
+                  key={service.name}
+                  className="flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-[0_0_10px_rgba(143,175,155,0.25)]"
+                >
+                  <Icon className="w-12 h-12 text-(--color-accent)" />
+                  <h3 className="text-lg font-semibold">{service.name}</h3>
+                  <p className="text-center text-sm text-(--color-text-main)">
+                    {service.description}
+                  </p>
+                </div>
+              );
+            }
+
+            // tab+desk
             return (
               <motion.div
-                layout
                 key={service.name}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.3 }}
                 variants={fadeUp}
                 transition={{ delay: index * 0.15, duration: 0.6 }}
-                className="flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-[0_0_10px_rgba(143,175,155,0.25)] 
-                md:hover:shadow-[0_0_20px_rgba(143,175,155,0.5)] transition will-change-transform transform-gpu"
+                className="flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-[0_0_10px_rgba(143,175,155,0.25)] hover:shadow-[0_0_20px_rgba(143,175,155,0.5)] transition"
               >
                 <Icon className="w-12 h-12 text-(--color-accent)" />
                 <h3 className="text-lg font-semibold">{service.name}</h3>
-                <p className="text-center text-sm leading-[150%] text-(--color-text-main)">
+                <p className="text-center text-sm text-(--color-text-main)">
                   {service.description}
                 </p>
               </motion.div>

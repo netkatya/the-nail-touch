@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://the-nail-touch.vercel.app/img/og-image.jpg",
+        secureUrl: "https://the-nail-touch.vercel.app/img/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "TheNailTouch Beauty Salon Sheffield",

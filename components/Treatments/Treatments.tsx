@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { services } from "@/const/services";
 import { useEffect, useState } from "react";
 
@@ -34,7 +35,21 @@ export default function Treatments() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => {
-            const Icon = service.icon;
+            const CardContent = (
+              <>
+                <Image
+                  src={service.image}
+                  alt={service.name}
+                  width={96}
+                  height={96}
+                  className="object-contain"
+                />
+                <h3 className="text-lg font-semibold">{service.name}</h3>
+                <p className="text-center text-sm text-(--color-text-main)">
+                  {service.description}
+                </p>
+              </>
+            );
 
             // mobile
             if (isMobile) {
@@ -43,16 +58,12 @@ export default function Treatments() {
                   key={service.name}
                   className="flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-[0_0_10px_rgba(143,175,155,0.25)]"
                 >
-                  <Icon className="w-12 h-12 text-(--color-accent)" />
-                  <h3 className="text-lg font-semibold">{service.name}</h3>
-                  <p className="text-center text-sm text-(--color-text-main)">
-                    {service.description}
-                  </p>
+                  {CardContent}
                 </div>
               );
             }
 
-            // tab+desk
+            // tablet + desktop
             return (
               <motion.div
                 key={service.name}
@@ -63,11 +74,7 @@ export default function Treatments() {
                 transition={{ delay: index * 0.15, duration: 0.6 }}
                 className="flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-[0_0_10px_rgba(143,175,155,0.25)] hover:shadow-[0_0_20px_rgba(143,175,155,0.5)] transition"
               >
-                <Icon className="w-12 h-12 text-(--color-accent)" />
-                <h3 className="text-lg font-semibold">{service.name}</h3>
-                <p className="text-center text-sm text-(--color-text-main)">
-                  {service.description}
-                </p>
+                {CardContent}
               </motion.div>
             );
           })}

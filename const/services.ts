@@ -7,34 +7,34 @@ export const services = [
     name: "Manicure",
     description:
       "Gentle care for your nails, shaping, polishing, and long-lasting results.",
-    icon: FaHandSparkles,
+    image: "/img/treatments/manicure.png",
   },
   {
     name: "Pedicure",
     description:
       "Relaxing foot care, softening, nail shaping, and smooth skin.",
-    icon: GiFootprint,
+    image: "/img/treatments/pedicure.png",
   },
   {
     name: "Massage",
     description:
       "Relaxing massage to release tension and restore comfort and well-being.",
-    icon: MdOutlineSpa,
+    image: "/img/treatments/massage.png",
   },
   {
     name: "Depilation",
     description: "Gentle and safe hair removal, leaving skin smooth and soft.",
-    icon: GiFemaleLegs,
+    image: "/img/treatments/wax.png",
   },
   {
     name: "Eyelashes",
     description: "Professional eyelash tinting for a natural, beautiful look.",
-    icon: GiEyelashes,
+    image: "/img/treatments/lashes.png",
   },
   {
     name: "Eyebrows",
     description:
       "Shaping, tinting, and grooming for perfect brows that suit you.",
-    icon: GiEyelashes,
+    image: "/img/treatments/brows.png",
   },
 ];

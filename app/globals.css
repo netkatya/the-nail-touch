@@ -23,7 +23,7 @@
   --color-icon: #7FA28C;
 }
 
-/* Тёмная тема */
+
 [data-theme="dark"] {
   --color-bg-main: #121212;
   --color-bg-soft: #1B1B1B;
@@ -45,8 +45,6 @@
 
 /* Optional: system theme fallback */
 :root:not([data-theme]) {
-
-  /* Если у пользователя тёмная тема в системе */
   @media (prefers-color-scheme: dark) {
     --color-bg-main: #121212;
     --color-bg-soft: #1B1B1B;

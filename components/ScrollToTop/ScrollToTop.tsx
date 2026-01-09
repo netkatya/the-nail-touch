@@ -14,7 +14,7 @@ export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
   const [percent, setPercent] = useState(0);
 
-  // Рассчет высоты документа
+
   const calcDocHeight = () => {
     docHeightRef.current = Math.max(
       document.body.scrollHeight,
@@ -25,7 +25,7 @@ export default function ScrollToTop() {
     );
   };
 
-  // Обновление прогресса и видимости кнопки
+
   const update = () => {
     const scrollY = window.scrollY;
     const viewport = window.innerHeight;
@@ -43,7 +43,7 @@ export default function ScrollToTop() {
     tickingRef.current = false;
   };
 
-  // Логика скролла
+
   const onScroll = () => {
     const scrollY = window.scrollY;
 

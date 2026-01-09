@@ -77,7 +77,7 @@ export default function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <motion.div
-          className="fixed top-0 right-0 w-full h-full bg-(--color-bg-soft) z-50 flex flex-col md:hidden"
+          className="fixed top-0 right-0 w-full h-full bg-(--color-bg-soft) z-70 flex flex-col md:hidden"
           initial="hidden"
           animate="visible"
           exit="hidden"

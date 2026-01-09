@@ -31,6 +31,7 @@ export default function ThemeToggler() {
   return (
     <button
       onClick={toggleTheme}
+      aria-label="theme toggle"
       className=" w-6 h-6 rounded-full grid place-items-center bg-(--color-bg-soft) shadow-md hover:shadow-lg transition-colors duration-300"
     >
       <FaMoon className="text-gray-400 text-md transition-colors duration-300 hover:text-gray-500" />

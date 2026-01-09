@@ -39,17 +39,17 @@ export default function Footer() {
       <div className="mt-6 mx-auto h-px w-full bg-white opacity-50"></div>
 
       <div className="flex justify-center items-center gap-6 p-4">
-        <p className="flex items-center justify-center gap-2 text-(--color-accent-soft) text-sm">
+        <p className="flex items-center justify-center gap-2 var(--color-text-light)) text-sm">
           <AiOutlineSafetyCertificate className="w-5 h-5" />
           <span>STGX00LI01 – Salon Gold (Public Liability)</span>
         </p>
-        <p className=" text-center text-sm text-(--color-accent-soft)">
+        <p className=" text-center text-sm var(--color-text-light)">
           &copy; {currentYear} The Nail Touch. Website created by{" "}
           <Link
             href="https://www.linkedin.com/in/kateryna-pryhoda"
             target="_blank"
             aria-label="Developer's Linkedin link"
-            className="hover:text-white transition-colors duration-200"
+            className="var(--color-text-light) hover:text-white transition-colors duration-200"
           >
             Kateryna Pryhoda
           </Link>{" "}
@@ -58,7 +58,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/viktorliulchyk"
             target="_blank"
             aria-label="Developer's Linkedin link"
-            className="hover:text-white transition-colors duration-200"
+            className="var(--color-text-light) hover:text-white transition-colors duration-200"
           >
             Viktor Liulchyk
           </Link>

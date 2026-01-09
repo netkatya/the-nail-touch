@@ -8,6 +8,7 @@ export default function SocialMediaLinks() {
         href="https://www.instagram.com/the_nail_touch?igsh=d3hmbHk1MG0yNTc="
         target="_blank"
         className="text-[#4f8055] hover:text-(--color-accent-soft) transition-colors duration-200"
+        aria-label="instagram"
       >
         <FaInstagram className="w-7 h-7 " />
       </Link>
@@ -15,12 +16,14 @@ export default function SocialMediaLinks() {
         href="https://wa.me/447465474727"
         target="_blank"
         className="text-[#4f8055] hover:text-(--color-accent-soft) transition-colors duration-200"
+        aria-label="whatsapp"
       >
         <FaWhatsapp className="w-7 h-7 " />
       </Link>
       <Link
         href="mailto:the_nail_touch@gmail.com"
         className="text-[#4f8055] hover:text-(--color-accent-soft) transition-colors duration-200"
+        aria-label="email"
       >
         <FaEnvelope className="w-7 h-7" />
       </Link>

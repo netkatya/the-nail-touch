@@ -7,7 +7,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { LuArrowLeft, LuArrowRight, LuX } from "react-icons/lu";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Keyboard, A11y, Pagination } from "swiper/modules";
+import {
+  Navigation,
+  Keyboard,
+  A11y,
+  Pagination,
+  Autoplay,
+} from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import { serviceGallery } from "@/types/services";
 
@@ -96,7 +102,7 @@ export default function Gallery() {
         {/* Slider Container */}
         <div className="relative pb-16">
           <Swiper
-            modules={[Navigation, Keyboard, A11y, Pagination]}
+            modules={[Navigation, Keyboard, A11y, Pagination, Autoplay]}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
@@ -132,6 +138,7 @@ export default function Gallery() {
             observeParents={true}
             className="w-full"
             a11y={{ enabled: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
           >
             {serviceGallery.map((item) => (
               <SwiperSlide key={item.id} className="h-auto">

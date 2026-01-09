@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "TheNailTouch",
     images: [
       {
-        url: "https://the-nail-touch.vercel.app/og-image.jpg",
+        url: "https://the-nail-touch.vercel.app/img/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "TheNailTouch Beauty Salon Sheffield",
@@ -50,7 +50,12 @@ export const metadata: Metadata = {
     title: "The Nail Touch | Sheffield",
     description:
       "Professional beauty services in Sheffield. Manicure, Pedicure, Massage, Waxing, Eyebrows, Eyelashes by Nora Stewart.",
-    images: ["https://the-nail-touch.vercel.app/og-image.jpg"],
+    images: [
+      {
+        url: "https://the-nail-touch.vercel.app/img/og-image.jpg",
+        alt: "TheNailTouch Beauty Salon Sheffield",
+      },
+    ],
   },
 };
 

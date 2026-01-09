@@ -68,12 +68,12 @@ export default function Treatments() {
               <motion.div
                 layout
                 key={service.name}
-                initial="hidden"
-                whileInView="visible"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 variants={fadeUp}
                 transition={{ delay: index * 0.15, duration: 0.6 }}
-                className=" min-h-55 flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-[0_0_10px_rgba(143,175,155,0.25)] 
+                className=" flex flex-col items-center gap-4 p-6 bg-(--color-bg-hero) rounded-2xl shadow-[0_0_10px_rgba(143,175,155,0.25)] 
                 md:hover:shadow-[0_0_20px_rgba(143,175,155,0.5)] transition will-change-transform transform-gpu"
               >
                 <Icon className="w-12 h-12 text-(--color-accent)" />

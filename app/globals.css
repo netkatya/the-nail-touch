@@ -8,9 +8,9 @@
   --color-bg-hero: #FFFFFF;
 
   /* Green */
-  --color-accent: #8FAF9B;
-  --color-accent-soft: #C9DBCF;
-  --color-accent-dark: #6F9580;
+  --color-accent: #8faf9b;
+  --color-accent-soft: #c9dbcf;
+  --color-accent-dark: #6f9580;
 
   /* Text */
   --color-text-main: #2F2F2F;
@@ -19,8 +19,8 @@
   --color-text-hero: #022C22;
 
   /* UI details */
-  --color-border: #E3E0DB;
-  --color-icon: #7FA28C;
+  --color-border: #e3e0db;
+  --color-icon: #7fa28c;
 }
 
 /* Тёмная тема */
@@ -94,7 +94,6 @@ section {
 }
 
 @media (min-width: 640px) {
-
   /* sm */
   .container {
     max-width: 640px;
@@ -122,7 +121,6 @@ section {
 }
 
 @media (min-width: 1280px) {
-
   /* xl */
   .container {
     max-width: 1280px;
@@ -133,7 +131,6 @@ section {
 }
 
 @media (min-width: 1536px) {
-
   /* 2xl */
   .container {
     max-width: 1536px;
@@ -166,12 +163,17 @@ section {
 }
 /* line */
 .bg-title-texture {
-  background: linear-gradient(90deg,
-      transparent,
-      var(--color-accent-soft),
-      transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-accent-soft),
+    transparent
+  );
 }
 
+.swiper-pagination-bullet-active {
+  @apply bg-black;
+}
 /* toggler */
 .toggle {
   border-radius: 50%;

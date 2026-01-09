@@ -77,18 +77,16 @@ export default function Gallery() {
 
   return (
     <section
-      className="pb-20 bg-linear-to-b from-white to-gray-50"
+      className="py-12 bg-linear-to-t from-(--color-bg-card) to-(--color-bg-soft)"
       id="gallery"
     >
-      <div className="w-full h-1 mb-20 bg-linear-to-r from-(--color-accent-soft) via-[var(--color-accent)/40] to-(--color-accent-soft) rounded-full"></div>
-
       <div className="container mx-auto px-4 max-w-5xl relative z-10">
         <div className="relative mb-16 flex justify-center">
           {/* Background stripe */}
           <div className="absolute top-1/2 -translate-y-1/2 w-full h-0.5 bg-linear-to-r from-transparent via-(--color-accent) to-transparent opacity-60" />
 
           {/* Title */}
-          <h2 className="relative z-10 px-8 py-2 text-3xl font-heading bg-white rounded-full">
+          <h2 className="relative z-10 px-8 py-2 text-4xl font-heading bg-(--color-bg-soft) rounded-full">
             Gallery
           </h2>
         </div>

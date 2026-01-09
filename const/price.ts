@@ -1,36 +1,5 @@
 export const pricingGroups = [
   {
-    title: "BROWS & LASHES",
-    items: [
-      { service: "Eyebrow shape (wax)", price: "£5" },
-      { service: "Eyebrow threading", price: "£7" },
-      { service: "Eyebrow tint", price: "£7" },
-      { service: "Eyebrow shape and tint", price: "£10" },
-      { service: "Eyelash tint", price: "£7" },
-      { service: "LVL lashes", price: "£25" },
-    ],
-  },
-  {
-    title: "WAXING",
-    items: [
-      { service: "Upper lip", price: "£5" },
-      { service: "Chin", price: "£6" },
-      { service: "Lip and chin", price: "£10" },
-      { service: "Underarms", price: "£10" },
-      { service: "Arms", price: "£15" },
-      { service: "Half leg", price: "£15" },
-      { service: "Full leg", price: "£20" },
-      { service: "Full leg and bikini line", price: "£25" },
-      { service: "Bikini line", price: "£10" },
-      { service: "Brazilian bikini line", price: "£15" },
-      { service: "Hollywood bikini", price: "£25" },
-    ],
-  },
-  {
-    title: "MASSAGE (CLASSIC)",
-    items: [{ service: "Back massage 30 min", price: "£15" }],
-  },
-  {
     title: "MANICURE",
     items: [
       {
@@ -76,5 +45,36 @@ export const pricingGroups = [
       },
       { service: "Gel toes(nail & cuticle tidy, gel polish)", price: "£20" },
     ],
+  },
+  {
+    title: "BROWS & LASHES",
+    items: [
+      { service: "Eyebrow shape (wax)", price: "£5" },
+      { service: "Eyebrow threading", price: "£7" },
+      { service: "Eyebrow tint", price: "£7" },
+      { service: "Eyebrow shape and tint", price: "£10" },
+      { service: "Eyelash tint", price: "£7" },
+      { service: "LVL lashes", price: "£25" },
+    ],
+  },
+  {
+    title: "WAXING",
+    items: [
+      { service: "Upper lip", price: "£5" },
+      { service: "Chin", price: "£6" },
+      { service: "Lip and chin", price: "£10" },
+      { service: "Underarms", price: "£10" },
+      { service: "Arms", price: "£15" },
+      { service: "Half leg", price: "£15" },
+      { service: "Full leg", price: "£20" },
+      { service: "Full leg and bikini line", price: "£25" },
+      { service: "Bikini line", price: "£10" },
+      { service: "Brazilian bikini line", price: "£15" },
+      { service: "Hollywood bikini", price: "£25" },
+    ],
+  },
+  {
+    title: "MASSAGE (CLASSIC)",
+    items: [{ service: "Back massage 30 min", price: "£15" }],
   },
 ];

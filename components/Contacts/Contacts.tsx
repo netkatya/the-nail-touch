@@ -27,7 +27,7 @@ const fadeUp = {
 export default function Contacts() {
   return (
     <section
-      className="relative py-10 md:py-20 bg-linear-to-b from-(--color-bg-card) to-(--color-bg-soft) overflow-hidden"
+      className="relative py-12 bg-linear-to-b from-(--color-bg-card) to-(--color-bg-soft) overflow-hidden"
       id="contact"
     >
       <div className="container mx-auto px-4 max-w-5xl relative z-10">
@@ -35,7 +35,7 @@ export default function Contacts() {
           {/* Background stripe */}
           <div className="absolute top-1/2 -translate-y-1/2 w-full h-0.5 bg-linear-to-r from-transparent via-(--color-accent) to-transparent opacity-60" />
 
-          <h2 className="relative z-10 px-8 py-2 text-3xl font-heading bg-(--color-bg-card) rounded-3xl">
+          <h2 className="relative z-10 px-8 py-2 text-4xl font-heading bg-(--color-bg-card) rounded-3xl">
             Contacts
           </h2>
         </div>

@@ -1,10 +1,10 @@
 "use client";
 
-import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggler from "../ThemeToggler/ThemeToggler";
+import SocialMediaLinks from "../SocialMediaLinks/SocialMediaLinks";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -20,7 +20,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-(--color-accent-dark) border-t border-t-(--color-text-hero) pt-6">
-      <div className="container flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="container flex flex-col lg:flex-row items-center justify-between gap-8">
         <Link href="/" className="flex items-center gap-4">
           <Image src="/img/logo.png" alt="Logo" width={120} height={120} />
         </Link>
@@ -32,29 +32,7 @@ export default function Footer() {
             </Link>
           ))}
         </nav>
-
-        <div className="flex items-center gap-6">
-          <Link
-            href="https://www.instagram.com/the_nail_touch?igsh=d3hmbHk1MG0yNTc="
-            target="_blank"
-            className="text-white hover:text-(--color-accent-soft) transition-colors duration-200"
-          >
-            <FaInstagram className="w-6 h-6 " />
-          </Link>
-          <Link
-            href="https://wa.me/447465474727"
-            target="_blank"
-            className="text-white hover:text-(--color-accent-soft) transition-colors duration-200"
-          >
-            <FaWhatsapp className="w-6 h-6 " />
-          </Link>
-          <Link
-            href="mailto:the_nail_touch@gmail.com"
-            className="text-white hover:text-(--color-accent-soft) transition-colors duration-200"
-          >
-            <FaEnvelope className="w-6 h-6 " />
-          </Link>
-        </div>
+        <SocialMediaLinks />
         <ThemeToggler />
       </div>
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import SocialMediaLinks from "../SocialMediaLinks/SocialMediaLinks";
 
 const menuVariants: Variants = {
   hidden: { opacity: 0, x: "100%" },
@@ -84,12 +85,7 @@ export default function Header() {
         >
           <div className="bg-(--color-accent-dark) h-25 py-2.5 border-b border-b-emerald-950 flex justify-between px-4">
             <Link href="/">
-              <Image
-                src="/img/logo-lighttheme.png"
-                alt="Logo"
-                width={80}
-                height={80}
-              />
+              <Image src="/img/logo.png" alt="Logo" width={80} height={80} />
             </Link>
             <button
               className="text-xl text-white"
@@ -99,26 +95,30 @@ export default function Header() {
               <FaTimes />
             </button>
           </div>
-
-          <nav className="flex flex-col gap-6 p-10">
-            {navLinks.map((link, index) => (
-              <motion.div
-                key={link.href}
-                custom={index}
-                initial="hidden"
-                animate="visible"
-                variants={itemVariants}
-              >
-                <Link
-                  href={link.href}
-                  className="text-2xl font-medium"
-                  onClick={() => setMenuOpen(false)}
+          <div className="p-12 flex flex-col justify-between h-full">
+            <nav className="flex flex-col gap-6 ">
+              {navLinks.map((link, index) => (
+                <motion.div
+                  key={link.href}
+                  custom={index}
+                  initial="hidden"
+                  animate="visible"
+                  variants={itemVariants}
                 >
-                  {link.label}
-                </Link>
-              </motion.div>
-            ))}
-          </nav>
+                  <Link
+                    href={link.href}
+                    className="text-2xl font-medium"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
+            </nav>
+            <div>
+              <SocialMediaLinks />
+            </div>
+          </div>
         </motion.div>
       )}
     </header>

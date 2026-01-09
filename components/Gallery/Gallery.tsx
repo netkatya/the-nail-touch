@@ -77,7 +77,7 @@ export default function Gallery() {
 
   return (
     <section
-      className="pb-20 bg-gradient-to-b from-white to-gray-50"
+      className="pb-20 bg-linear-to-b from-white to-gray-50"
       id="gallery"
     >
       <div className="w-full h-1 mb-20 bg-linear-to-r from-(--color-accent-soft) via-[var(--color-accent)/40] to-(--color-accent-soft) rounded-full"></div>
@@ -138,7 +138,7 @@ export default function Gallery() {
             {serviceGallery.map((item) => (
               <SwiperSlide key={item.id} className="h-auto">
                 <div
-                  className="relative aspect-[4/3] w-full cursor-pointer group overflow-hidden rounded-2xl"
+                  className="relative aspect-4/3 w-full cursor-pointer group overflow-hidden rounded-2xl"
                   onClick={() => openLightbox(item)}
                 >
                   <Image

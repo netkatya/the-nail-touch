@@ -44,7 +44,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-(--color-accent-dark) w-full h-25 py-2.5 border-b border-b-(--color-text-hero) fixed top-0 left-0 z-50">
+    <header className="bg-(--color-accent-dark) w-full h-25 py-2.5 border-b border-b-(--color-text-hero) fixed top-0 left-0 z-60">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <Link href="/">

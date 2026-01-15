@@ -27,17 +27,17 @@ export const metadata: Metadata = {
     "personal care Sheffield",
     "cosmetic treatments Sheffield",
   ].join(", "),
-  authors: [{ name: "Nora Stewart", url: "https://the-nail-touch.vercel.app" }],
+  authors: [{ name: "Nora Stewart", url: "https://thenailtouch.com" }],
   openGraph: {
     title: "The Nail Touch | Sheffield",
     description:
       "Professional beauty services in Sheffield by Nora Stewart. Manicure, Pedicure, Massage, Waxing, Eyebrows, Eyelashes. Safe and relaxing treatments.",
-    url: "https://the-nail-touch.vercel.app/",
+    url: "https://thenailtouch.com",
     siteName: "TheNailTouch",
     images: [
       {
-        url: "https://the-nail-touch.vercel.app/img/og-image.jpg",
-        secureUrl: "https://the-nail-touch.vercel.app/img/og-image.jpg",
+        url: "https://thenailtouch.com/img/og-image.jpg",
+        secureUrl: "https://thenailtouch.com/img/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "TheNailTouch Beauty Salon Sheffield",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
       "Professional beauty services in Sheffield. Manicure, Pedicure, Massage, Waxing, Eyebrows, Eyelashes by Nora Stewart.",
     images: [
       {
-        url: "https://the-nail-touch.vercel.app/img/og-image.jpg",
+        url: "https://thenailtouch.com/img/og-image.jpg",
         alt: "TheNailTouch Beauty Salon Sheffield",
       },
     ],

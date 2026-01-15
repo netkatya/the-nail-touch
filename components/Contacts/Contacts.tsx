@@ -111,7 +111,7 @@ export default function Contacts() {
                   <FaEnvelope className="text-(--color-accent) w-6 h-6" />
                 </div>
                 <span className="text-(--color-text-main) text-lg">
-                  the_nail_touch@gmail.com
+                  nailtouch@gmail.com
                 </span>
               </Link>
             </motion.div>

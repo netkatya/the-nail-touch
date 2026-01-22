@@ -75,6 +75,6 @@ export const pricingGroups = [
   },
   {
     title: "MASSAGE (CLASSIC)",
-    items: [{ service: "Back massage 30 min", price: "£15" }],
+    items: [{ service: "Back massage 30 min", price: "£20" }],
   },
 ];
